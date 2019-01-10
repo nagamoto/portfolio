@@ -27,6 +27,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/nes.css/scss/nes.scss",
               "src/styles.scss"
             ],
             "scripts": []
