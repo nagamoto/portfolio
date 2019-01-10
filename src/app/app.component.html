@@ -2,15 +2,15 @@
 <header>
   <h1>Portfolio</h1>
   <nav>
-    <section fxLayout="row">
-      <div><a href='#works'>works</a></div>
-      <div><a href='#profile'>profile</a></div>
-      <div><a href='#contact'>contact</a></div>
+    <section fxLayout="row" fxLayoutAlign="space-around center">
+      <div fxFlex="33"><a href='#works'>works</a></div>
+      <div fxFlex="33"><a href='#profile'>profile</a></div>
+      <div fxFlex="33"><a href='#contact'>contact</a></div>
     </section>
   </nav>
 </header>
 
-<div fxLayout="column">
+<article fxLayout="column">
   <section>
     <h1 id="works">works</h1>
   </section>
@@ -22,6 +22,6 @@
   <section>
     <h1 id="contact">contact</h1>
   </section>
-</div>
+</article>
 
 <router-outlet></router-outlet>
