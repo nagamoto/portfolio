@@ -3,8 +3,9 @@
   <h1>Portfolio</h1>
   <nav>
     <section fxLayout="row" fxLayoutAlign="space-around center">
-      <a class="nes-btn" fxFlex="30" href='#works'>works</a>
       <a class="nes-btn" fxFlex="30" href='#profile'>profile</a>
+      <a class="nes-btn" fxFlex="30" href='#skill'>skill</a>
+      <a class="nes-btn" fxFlex="30" href='#works'>works</a>
       <a class="nes-btn" fxFlex="30" href='#contact'>contact</a>
     </section>
   </nav>
@@ -12,11 +13,46 @@
 
 <article fxLayout="column">
   <section class="nes-container with-title">
-    <h1 class="title" id="works">works</h1>
+    <h1 class="title" id="profile">profile</h1>
   </section>
 
   <section class="nes-container with-title">
-    <h1 class="title" id="profile">profile</h1>
+    <h1 class="title" id="skill">skill</h1>
+    <div fxLayout="column">
+      <div fxLayout="row" fxLayoutAlign="space-between center">
+        <div fxFlex="25">skill</div>
+        <div fxFlex="75" fxLayout="row" fxLayoutAlign="space-between center">
+          <div class="t-left">begineer</div>
+          <div class="t-center">junior</div>
+          <div class="t-right">senior</div>
+        </div>
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="space-between center">
+        <div fxFlex="25">Ruby on Rails</div>
+        <progress class="nes-progress is-primary" value="7.5" max="10"></progress>
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="space-between center">
+        <div fxFlex="25">Angular</div>
+        <progress class="nes-progress is-success" value="5" max="10"></progress>
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="space-between center">
+          <div fxFlex="25">JQuery</div>
+        <progress class="nes-progress is-warning" value="3" max="10"></progress>
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="space-between center">
+        <div fxFlex="25">PHP</div>
+        <progress class="nes-progress is-error" value="1" max="10"></progress>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="nes-container with-title">
+    <h1 class="title" id="works">works</h1>
   </section>
 
   <section class="nes-container with-title">
