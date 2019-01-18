@@ -5,11 +5,13 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SkillComponent } from './skill/skill.component';
+import { LangComponent } from './skill/lang/lang.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SkillComponent
+    SkillComponent,
+    LangComponent
   ],
   imports: [
     BrowserModule,
