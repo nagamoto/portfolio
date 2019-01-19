@@ -9,7 +9,22 @@ import { ToolsComponent } from './tools/tools.component';
   styleUrls: ['./skill.component.scss']
 })
 export class SkillComponent {
-  lang = LangComponent;
-  dataStore = DataStoreComponent;
-  tools = ToolsComponent;
+  private tabs = [
+    {
+      label: 'Languege, Framework',
+      component: LangComponent
+    },
+    {
+      label: 'Data Store',
+      component: DataStoreComponent
+    },
+    {
+      label: 'etc',
+      component: ToolsComponent
+    }
+  ];
+
+  private selectedTabNum = 0;
+
+  private selectedTab = this.tabs[this.selectedTabNum];
 }

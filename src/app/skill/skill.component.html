@@ -1,11 +1,11 @@
 <section class="nes-container with-title">
   <h1 class="title" id="skill">skill</h1>
   <div fxLayout="row" fxLayoutAlign="space-around">
-    <button fxFlex="30" type="button" class="nes-btn">Lang</button>
-    <button fxFlex="30" type="button" class="nes-btn is-disabled">Data Store</button>
-    <button fxFlex="30" type="button" class="nes-btn is-disabled">ETC</button>
+    <button fxFlex="30" type="button" class="nes-btn is-primary">Lang</button>
+    <button fxFlex="30" type="button" class="nes-btn">Data Store</button>
+    <button fxFlex="30" type="button" class="nes-btn">ETC</button>
   </div>
-  <h2>Languege, Framework</h2>
+  <h2>{{selectedTab.label}}</h2>
   <div fxLayout="column">
     <div fxLayout="row" fxLayoutAlign="space-between center">
       <div fxFlex="40" fxFlex.lt-sm="50" fxFlex.gt-sm="30"></div>
@@ -15,11 +15,8 @@
       </div>
     </div>
 
-    <app-lang-component></app-lang-component>
-
-    <app-data-store-component></app-data-store-component>
-
-    <app-tools-component></app-tools-component>
+    <ng-container *ngComponentOutlet="selectedTab.component">
+    </ng-container>
 
   </div>
 </section>
