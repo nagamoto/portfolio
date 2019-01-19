@@ -22,6 +22,11 @@ import { ToolsComponent } from './skill/tools/tools.component';
     FlexLayoutModule,
     AppRoutingModule
   ],
+  entryComponents: [
+    LangComponent,
+    DataStoreComponent,
+    ToolsComponent
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
