@@ -27,4 +27,8 @@ export class SkillComponent {
   private selectedTabNum = 0;
 
   private selectedTab = this.tabs[this.selectedTabNum];
+
+  private onClickButton(i): void {
+    this.selectedTab = this.tabs[i];
+  }
 }

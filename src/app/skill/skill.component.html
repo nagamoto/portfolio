@@ -1,9 +1,9 @@
 <section class="nes-container with-title">
   <h1 class="title" id="skill">skill</h1>
   <div fxLayout="row" fxLayoutAlign="space-around">
-    <button fxFlex="30" type="button" class="nes-btn is-primary">Lang</button>
-    <button fxFlex="30" type="button" class="nes-btn">Data Store</button>
-    <button fxFlex="30" type="button" class="nes-btn">ETC</button>
+    <button fxFlex="30" type="button" class="nes-btn" (click)="onClickButton(0)">Lang</button>
+    <button fxFlex="30" type="button" class="nes-btn" (click)="onClickButton(1)">Data Store</button>
+    <button fxFlex="30" type="button" class="nes-btn" (click)="onClickButton(2)">ETC</button>
   </div>
   <h2>{{selectedTab.label}}</h2>
   <div fxLayout="column">
@@ -15,8 +15,7 @@
       </div>
     </div>
 
-    <ng-container *ngComponentOutlet="selectedTab.component">
-    </ng-container>
+    <ng-container *ngComponentOutlet="selectedTab.component"></ng-container>
 
   </div>
 </section>
