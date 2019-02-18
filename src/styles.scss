@@ -2,4 +2,9 @@
 
 .nes-container {
   margin: 5px;
+  padding: 10px;
+}
+
+.nes-container.with-title {
+  margin: 0.5rem 5px;
 }
