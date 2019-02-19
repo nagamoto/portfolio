@@ -10,9 +10,10 @@
   </nav>
 </header>
 
-<article fxLayout="column">
+<article fxLayout="column" fxLayoutAlign="space-around">
+  <h2 class="separator" id="profile">- Profile -</h2>
   <section class="nes-container with-title">
-    <h1 class="title" id="profile">profile</h1>
+    <h1 class="title">Introduction</h1>
     <div fxLayout="row" fxLayoutAlign="space-around end">
       <div fxFlex="none">
         <img class="icon-for-message" src="/assets/images/iki_t_dot.jpg">
@@ -24,10 +25,10 @@
         </p>
       </div>
     </div>
+  </section>
 
-    <br>
-
-    <h2>Qualifications</h2>
+  <section class="nes-container with-title">
+    <h1 class="title">Qualifications</h1>
     <ul class="nes-list is-disc">
       <li>Master's degree of Information Technology</li>
       <li><a href='https://www.jitec.ipa.go.jp/1_11seido/seido_gaiyo.html' target=”_blank”>Fundamental Information Technology Engineer Examination</a></li>
@@ -35,10 +36,14 @@
     </ul>
   </section>
 
+  <h2 class="separator" id="skill">- Skill -</h2>
+
   <app-skill-component></app-skill-component>
 
+  <h2 class="separator" id="contact">- Contact -</h2>
+
   <section class="nes-container with-title">
-    <h1 class="title" id="contact">contact</h1>
+    <h1 class="title">contact</h1>
     <a href='https://twitter.com/ngmt83' target=”_blank”><i class="nes-icon twitter is-large"></i></a>
   </section>
 </article>
