@@ -5,7 +5,7 @@
     <section fxLayout="row" fxLayoutAlign="space-around center">
       <a class="nes-btn" fxFlex="30" href='#profile'>profile</a>
       <a class="nes-btn" fxFlex="30" href='#skill'>skill</a>
-      <a class="nes-btn" fxFlex="30" href='#works'>works</a>
+      <a class="nes-btn" fxFlex="30" href='#link'>link</a>
     </section>
   </nav>
 </header>
@@ -40,22 +40,20 @@
 
   <app-skill-component></app-skill-component>
 
-  <h2 class="separator" id="works">- Works -</h2>
+  <h2 class="separator" id="link">- Link -</h2>
 
-  <section class="nes-container with-title">
-    <h1 class="title">output</h1>
-    <div class="iframely-embed">
-      <div class="iframely-responsive" style="height: 168px; padding-bottom: 0;">
-        <a href="https://ngmt83.hatenablog.com/" data-iframely-url="//cdn.iframe.ly/OWbBeRn"></a>
-      </div>
-    </div>
-    <script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
-  </section>
+  <section class="nes-container" fxLayout="row" fxLayoutAlign="space-around center">
+    <a href='https://ngmt83.hatenablog.com' target=”_blank”>
+      <img class="icon-for-link" src="/assets/images/hatenablog-logo.svg">
+    </a>
 
-  <h2 class="separator">- Contact -</h2>
+    <a href='https://speakerdeck.com/ngmt' target=”_blank”>
+      <img class="icon-for-link" src="/assets/images/speaker_deck.svg">
+    </a>
 
-  <section class="nes-container" fxLayout="column" fxLayoutAlign="space-around center">
-    <a href='https://twitter.com/ngmt83' target=”_blank”><i class="nes-icon twitter is-large"></i></a>
+    <a href='https://twitter.com/ngmt83' target=”_blank”>
+      <i class="nes-icon twitter is-large"></i>
+    </a>
   </section>
 
 </article>
