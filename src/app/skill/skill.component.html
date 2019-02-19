@@ -1,8 +1,7 @@
 <section class="nes-container">
   <div fxLayout="row" fxLayoutAlign="space-around">
-    <button fxFlex="30" type="button" class="nes-btn" (click)="onClickButton(0)">Lang</button>
-    <button fxFlex="30" type="button" class="nes-btn" (click)="onClickButton(1)">Data Store</button>
-    <button fxFlex="30" type="button" class="nes-btn" (click)="onClickButton(2)">etc</button>
+    <button fxFlex="45" type="button" class="nes-btn" (click)="onClickButton(0)">Lang</button>
+    <button fxFlex="45" type="button" class="nes-btn" (click)="onClickButton(1)">Data Store</button>
   </div>
   <h2>{{selectedTab.label}}</h2>
   <div fxLayout="column">
@@ -16,5 +15,64 @@
 
     <ng-container *ngComponentOutlet="selectedTab.component"></ng-container>
 
+  </div>
+</section>
+
+<br>
+
+<section class="nes-container with-title">
+  <h1 class="title">tools</h1>
+  <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+    <a href="javascript:void(0)" class="nes-badge">
+      <span class="is-dark">GitHub</span>
+    </a>
+
+    <a href="javascript:void(0)" class="nes-badge">
+      <span class="is-dark">GitLab</span>
+    </a>
+
+    <a href="javascript:void(0)" class="nes-badge">
+      <span class="is-dark">Bitbucket</span>
+    </a>
+
+    <a href="javascript:void(0)" class="nes-badge">
+      <span class="is-dark">Metabase</span>
+    </a>
+
+    <a href="javascript:void(0)" class="nes-badge">
+      <span class="is-dark">Redash</span>
+    </a>
+
+    <a fxFlex="none" href="javascript:void(0)" class="nes-badge">
+      <span class="is-dark">Pivotal Tracker</span>
+    </a>
+
+    <a href="javascript:void(0)" class="nes-badge">
+      <span class="is-dark">Backlog</span>
+    </a>
+
+    <a href="javascript:void(0)" class="nes-badge">
+      <span class="is-dark">Slack</span>
+    </a>
+
+    <a href="javascript:void(0)" class="nes-badge">
+      <span class="is-dark">ChatWork</span>
+    </a>
+
+    <a href="javascript:void(0)" class="nes-badge">
+      <span class="is-dark">AWS</span>
+    </a>
+
+    <a href="javascript:void(0)" class="nes-badge">
+      <span class="is-dark">Cloud9</span>
+    </a>
+
+    <a href="javascript:void(0)" class="nes-badge">
+      <span class="is-dark">Firebase</span>
+    </a>
+
+    <a href="javascript:void(0)" class="nes-badge">
+      <span class="is-dark">Salesforce</span>
+    </a>
   </div>
 </section>
