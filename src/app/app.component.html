@@ -5,7 +5,7 @@
     <section fxLayout="row" fxLayoutAlign="space-around center">
       <a class="nes-btn" fxFlex="30" href='#profile'>profile</a>
       <a class="nes-btn" fxFlex="30" href='#skill'>skill</a>
-      <a class="nes-btn" fxFlex="30" href='#contact'>contact</a>
+      <a class="nes-btn" fxFlex="30" href='#link'>link</a>
     </section>
   </nav>
 </header>
@@ -40,12 +40,20 @@
 
   <app-skill-component></app-skill-component>
 
-  <h2 class="separator" id="contact">- Contact -</h2>
+  <h2 class="separator" id="link">- Link -</h2>
 
-  <section class="nes-container with-title">
-    <h1 class="title">contact</h1>
-    <a href='https://twitter.com/ngmt83' target=”_blank”><i class="nes-icon twitter is-large"></i></a>
+  <section class="nes-container" fxLayout="row" fxLayoutAlign="space-around center">
+    <a href='https://ngmt83.hatenablog.com' target=”_blank”>
+      <img class="icon-for-link" src="/assets/images/hatenablog-logo.svg">
+    </a>
+
+    <a href='https://speakerdeck.com/ngmt' target=”_blank”>
+      <img class="icon-for-link" src="/assets/images/speaker_deck.svg">
+    </a>
+
+    <a href='https://twitter.com/ngmt83' target=”_blank”>
+      <i class="nes-icon twitter is-large"></i>
+    </a>
   </section>
-</article>
 
-<router-outlet></router-outlet>
+</article>
